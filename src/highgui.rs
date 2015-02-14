@@ -302,6 +302,7 @@ pub const CV_CAP_INTELPERC_IMAGE: ::libc::c_uint = 3;
 pub enum Struct_CvVideoWriter { }
 pub type CvVideoWriter = Struct_CvVideoWriter;
 
+#[link(name = "opencv_highgui")]
 extern "C" {
     pub fn cvFontQt(nameFont: *const ::libc::c_char, pointSize: ::libc::c_int,
                     color: CvScalar, weight: ::libc::c_int,
